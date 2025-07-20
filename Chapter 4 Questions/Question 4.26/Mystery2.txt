@@ -1,0 +1,46 @@
+1  // Exercise 4.26: Mystery3.java
+ 2  public class Mystery3 {
+ 3     public static void main(String[] args) {
+ 4        int row = 10;
+ 5
+ 6        while (row >= 1) {
+ 7           int column = 1;
+ 8
+ 9           while (column <= 10) {
+10             System.out.print(row % 2 == 1 ? "<" : ">");
+11             ++column;
+12           }
+13
+14           --row;
+15           System.out.println();
+16       }
+17     }
+18  }
+
+Ok so in this mystery code you have a starting integer of 10 int row = 10;
+this means when the while sequence starts it'll start at 10. the first while statement says
+while (row >= 1)
+  int column = 1; 
+In this sequence the number starts at 10 and will form a column it ther terminal 
+decreasing in number until the sequence reaches 1.
+
+The next while statement while (column <= 10) means that the sequence will draw 10 colums 
+before the sequence ends.
+
+The next line is where the magic happens System.out.print(row % 2 == 1 "<" : ">"); the % 2 part of 
+this code is the remainder operator what it does is it dives ever number by 2 and determines if 
+there is a remainder based on if the number is odd or even. even numbers should have a remainder of 0
+and odd numbers should have a remainder of 1. the next part of the code "<" : ">" will print a > sign for 
+even numbers and < sign for odd numbers. --row: means the column starts at 10 and counts down to 1.
+the final result of this code should be:
+
+row 10 >>>>>>>>>> even
+row 09 <<<<<<<<<< odd
+row 08 >>>>>>>>>> even
+row 07 <<<<<<<<<< odd
+row 06 >>>>>>>>>> even
+row 05 <<<<<<<<<< odd
+row 04 >>>>>>>>>> even
+row 03 <<<<<<<<<< odd
+row 02 >>>>>>>>>> even
+row 01 <<<<<<<<<< odd
