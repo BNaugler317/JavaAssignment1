@@ -1,0 +1,31 @@
+1  // Exercise 4.25: Mystery2.java
+ 2  public class Mystery2 {
+ 3     public static void main(String[] args) {
+ 4        int count = 1;
+ 5
+ 6        while (count <= 10) {
+ 7           System.out.println(count % 2 == 1 ? "****" : "++++++++");
+ 8           ++count;
+ 9        } 
+10     } 
+11  }
+
+Ok so what is happening this code? first you have and Int variable int count = 1
+so your count will begin at the number 1.
+
+next you have a while loop that loops for 10 interations while (count <=10)
+next in the println fuction you have % 2 == 1 ? so what this section of the code does is % 2 is remainder operator
+it divides the current interation by 2 and determins if the number has a remainder or not. if the number is odd 
+it will return a remainder of 1 and if the number is even it will return a remainder of 0.
+if the number is odd it will print "++++++++" and if the number is even it should print "****"
+final output should looks like:
+1 odd "++++++++"
+2 even "****"
+3 odd "++++++++"
+4 even "****"
+5 odd "++++++++"
+6 even "****"
+7 odd "++++++++"
+8 even "****"
+9 odd "++++++++"
+10 even "****"
